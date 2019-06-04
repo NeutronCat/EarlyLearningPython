@@ -37,3 +37,26 @@ age.append(42)
 all_ages = age + [32, 41, 29]
 name_and_age = zip(first_names,all_ages)
 ids = range(4)
+
+#length, index, select via index
+list1 = range(2, 20, 3)
+list1_len = len(list1)
+print(list1_len)
+
+employees = ['Michael', 'Dwight', 'Jim', 'Pam', 'Ryan', 'Andy', 'Robert']
+index4 = 'Ryan'
+print(len(employees))
+print(employees[4])
+
+shopping_list = ['eggs', 'butter', 'milk', 'cucumbers', 'juice', 'cereal']
+print(len(shopping_list))
+last_element = (shopping_list[-1])
+element5 = shopping_list[5]
+print((shopping_list[-1]),(shopping_list[5]))
+
+suitcase = ['shirt', 'shirt', 'pants', 'pants', 'pajamas', 'books']
+
+beginning = suitcase[0:4]
+print(beginning)
+middle = suitcase[2:4]
+print(middle)
