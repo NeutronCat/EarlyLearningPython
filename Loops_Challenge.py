@@ -33,4 +33,50 @@ def odd_indices(lst):
   return oddlist
 print(odd_indices([4, 3, 7, 10, 11, -2]))
 
+#nested base exponent loop
+def exponents(bases, powers):
+  new_lst = []
+  for base in bases:
+    for power in powers:
+      new_lst.append(base ** power)
+  return new_lst
+print(exponents([2, 3, 4], [1, 2, 3]))
+
+#larger sum of two lists
+def larger_sum(lst1,lst2):
+  cnt1 = 0
+  cnt2 = 0
+  for num in lst1:
+    cnt1 += num
+  for num in lst2:
+    cnt2 += num
+  if cnt1 >= cnt2:
+    return lst1
+  else:
+    return lst2
+print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+#over 9000!!!
+def over_nine_thousand(lst):
+  total = 0
+  for number in lst:
+    total += number
+    if (total > 9000):
+      break
+  return total
+print(over_nine_thousand([8000, 900, 120, 5000]))
+
+#max num
+def max_num(nums):
+  maximum = nums[0]
+  for num in nums:
+    if num > maximum:
+      maximum = num
+    else:
+      continue
+  return maximum
+print(max_num([50, -10, 0, 75, 20]))
+
+
+
 
