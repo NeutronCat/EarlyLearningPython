@@ -25,6 +25,12 @@ def delete_starting_evens(lst):
 print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
 print(delete_starting_evens([4, 8, 10]))
 
-
+#odd indicies
+def odd_indices(lst):
+  oddlist = []
+  for index in range(1, len(lst), 2):
+    oddlist.append(lst[index])
+  return oddlist
+print(odd_indices([4, 3, 7, 10, 11, -2]))
 
 
