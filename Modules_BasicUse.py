@@ -40,7 +40,3 @@ def always_three():
 # in script.py
 from library import always_three
 print(always_three())
-
-
-
-
